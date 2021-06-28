@@ -1,0 +1,11 @@
+@import '../Cell/Cell';
+
+.board {
+  display: flex;
+  flex-direction: row;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+}

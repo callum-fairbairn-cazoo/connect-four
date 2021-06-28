@@ -1,0 +1,21 @@
+$cell-dimension: 15vmin;
+
+.cell {
+  width: $cell-dimension;
+  height: $cell-dimension;
+  background: #F9F5FF;
+  border: solid black;
+  border-width: 1px 0 0 1px;
+}
+
+.last-column {
+  border-width: 1px 1px 0px 1px;
+}
+
+.last-row {
+  border-width: 1px 0px 1px 1px;
+}
+
+.last-cell {
+  border-width: 1px 1px 1px 1px;
+}
