@@ -1,6 +1,5 @@
 import { SIDE_LENGTH } from '../../contants'
 import { Cell } from '../Cell/Cell'
-
 import './Board.scss'
 import { useAppSelector } from '../../app/hooks'
 import { selectBoardState } from './boardState'
