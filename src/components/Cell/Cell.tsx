@@ -1,5 +1,6 @@
 import './Cell.scss'
 import { SIDE_LENGTH } from '../../contants'
+import { Counter } from '../Counter/Counter'
 
 type CellProps = {
   x: number,
@@ -13,7 +14,7 @@ export const Cell = ({x, y}: CellProps) => {
         ${y === SIDE_LENGTH - 1 ? ' last-row' : ''}
         ${x === SIDE_LENGTH - 1 && y === SIDE_LENGTH - 1 ? ' last-cell' : ''}
       `}>
-      {`${x} ${y}`}
+      <Counter colour={(x + y) % 2 === 0 ? 'red' : 'blue'} />
     </div>
   )
 }

@@ -1,0 +1,17 @@
+@import '../Cell/Cell';
+
+$counter-dimension: $cell-dimension - 2;
+
+.counter {
+  height: $counter-dimension;
+  width: $counter-dimension;
+  border-radius: 100%;
+}
+
+.red {
+  background: #BB4430;
+}
+
+.blue {
+  background: #247BA0;
+}

@@ -6,14 +6,17 @@ $cell-dimension: 15vmin;
   background: #F9F5FF;
   border: solid black;
   border-width: 1px 0 0 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .last-column {
-  border-width: 1px 1px 0px 1px;
+  border-width: 1px 1px 0 1px;
 }
 
 .last-row {
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px 0 1px 1px;
 }
 
 .last-cell {
