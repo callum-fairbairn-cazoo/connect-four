@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { boardStateReducer } from './boardState'
+import { turnReducer } from './turn'
 
 export const store = configureStore({
   reducer: {
     boardState: boardStateReducer,
+    turn: turnReducer,
   },
 });
 
