@@ -9,7 +9,7 @@ import { CounterColours } from '../../typescript/enums'
 export const Cell = ({ x, y, value }: CellState) => {
   const dispatch = useAppDispatch()
   const newCellState = { x, y, value: CounterColours.Red }
-  
+
   return (
     <div
       className={`cell
