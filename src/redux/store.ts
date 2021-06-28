@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { boardStateReducer } from '../components/Board/boardState'
+import { boardStateReducer } from './boardState'
 
 export const store = configureStore({
   reducer: {

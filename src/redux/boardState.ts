@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { SIDE_LENGTH } from '../../contants'
-import { RootState } from '../../app/store'
-import { CellState } from '../../typescript/types'
+import { SIDE_LENGTH } from '../contants'
+import { RootState } from './store'
+import { CellState } from '../typescript/types'
 
 export type BoardState = CellState[][]
 
