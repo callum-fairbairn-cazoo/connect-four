@@ -1,13 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { SIDE_LENGTH } from '../../contants'
-import { CounterColours } from '../../types/enums'
 import { RootState } from '../../app/store'
-
-export interface CellState {
-  x: number,
-  y: number,
-  value: null | CounterColours
-}
+import { CellState } from '../../typescript/types'
 
 export type BoardState = CellState[][]
 

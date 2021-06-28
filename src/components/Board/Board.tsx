@@ -12,7 +12,7 @@ export const Board = () => {
     <div className="board">
       {
         Array(SIDE_LENGTH).fill(0).map( (_, x) =>
-          <div className="column">
+          <div key={x} className="column">
             {Array(SIDE_LENGTH).fill(0).map((_, y) =>
               <Cell key={`${x},${y}`} x={x} y={y} value={boardState[x][y].value}/>
             )}

@@ -1,15 +1,9 @@
 import './Cell.scss'
 import { SIDE_LENGTH } from '../../contants'
 import { Counter } from '../Counter/Counter'
-import { CounterColours } from '../../types/enums'
+import { CellState } from '../../typescript/types'
 
-type CellProps = {
-  x: number,
-  y: number,
-  value: null | CounterColours
-}
-
-export const Cell = ({x, y, value}: CellProps) => {
+export const Cell = ({x, y, value}: CellState) => {
   return (
     <div className={`cell
         ${x === SIDE_LENGTH - 1 ? ' last-column' : ''}
