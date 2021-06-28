@@ -1,12 +1,13 @@
 import './Counter.scss'
+import { CounterColours } from '../../types/enums'
 
 type CounterProps = {
-  colour: 'red' | 'blue'
+  value: null | CounterColours
 }
 
-export const Counter = ({ colour }: CounterProps) => {
+export const Counter = ({ value }: CounterProps) => {
   return (
-    <div className={`counter ${colour}`}>
+    <div className={`counter ${value}`}>
 
     </div>
   )
