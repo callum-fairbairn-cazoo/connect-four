@@ -16,7 +16,6 @@ const initialState: BoardState =
 const getYValueOfBottomEmptyCellInColumn = (column: CellState[]): number | void => {
   for (let yIndex = column.length - 1; yIndex > -1; yIndex--) {
     if (column[yIndex].value === null) {
-      console.log(yIndex)
       return yIndex
     }
   }
