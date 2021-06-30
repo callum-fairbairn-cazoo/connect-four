@@ -1,4 +1,4 @@
-import { createSlice, current, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { SIDE_LENGTH } from '../contants'
 import { RootState } from './store'
 import { CellState } from '../typescript/types'
@@ -13,23 +13,14 @@ const initialState: BoardState =
     ),
   )
 
-const getYValueOfBottomEmptyCellInColumn = (column: CellState[]): number | void => {
-  for (let yIndex = column.length - 1; yIndex > -1; yIndex--) {
-    if (column[yIndex].value === null) {
-      return yIndex
-    }
-  }
-}
+
 
 const boardStateSlice = createSlice({
   name: 'boardState',
   initialState,
   reducers: {
     addCounter: (state, action: PayloadAction<CellState>) => {
-      const y: number | void = getYValueOfBottomEmptyCellInColumn(current(state)[action.payload.x])
-      if (y !== undefined) {
-        state[action.payload.x][y] = action.payload
-      }
+      state[action.payload.x][action.payload.y] = action.payload
     }
   }
 })
